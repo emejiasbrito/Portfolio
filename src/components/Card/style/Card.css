@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.card-container {
+  background: #fff;
+}
+
+.card-container img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-container .container-description {
+  position: relative;
+}
+
+.card-container .container-description .description {
+  margin-top: -60px;
+  color: #fff;
+  background: #02081a;
+  opacity: .9;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 3% 2%;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: opacity ease 300ms;
+  transition: opacity ease 300ms;
+  font-size: 14px;
+}
+
+.card-container .footer {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  line-height: 20px;
+}
+
+.card-container .footer .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-container .footer .skill span {
+  color: #333;
+  font-weight: 300;
+  margin: 12px 0;
+  padding: 0 14px;
+  font-size: 13px;
+  border-right: 1px solid  #eee;
+}
+
+.card-container .footer .skill span:first-child {
+  padding-left: 0;
+}
+
+.card-container .footer .skill span:last-child {
+  border-right: none;
+}
+
+@media (max-width: 1000px) {
+  .card-container .footer .skill span {
+    margin: 6px 0;
+    padding: 0 4px;
+    font-size: 10px;
+  }
+}
+
+.card-container a:hover .description {
+  opacity: .9;
+}
+/*# sourceMappingURL=Card.css.map */

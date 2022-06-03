@@ -1,0 +1,73 @@
+@import '../../../style/global.scss';
+
+.card-container {
+    background: #fff;
+    img {
+        width:100%;
+        cursor: pointer;
+    }
+    .container-description {
+        position: relative;
+        .description {
+            margin-top: -60px;
+            color: #fff;
+            background: $primary-color;
+            opacity: .9;
+            border-radius: 4px 4px 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: left;
+            padding: 3% 2%;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity ease 300ms;
+            font-size: 14px;
+        }
+    }
+    .footer {
+        padding: 10px;
+        border-top: 1px solid #eee;
+        line-height: 20px;
+        .skill {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:flex-start;
+            span {
+                color: #333;
+                font-weight: 300;
+                margin: 12px 0;
+                padding: 0 14px;
+                font-size: 13px;
+                border-right: 1px solid  #eee;
+            }
+            span:first-child {
+                padding-left: 0;
+            }
+            span:last-child {
+                border-right: none;
+            }
+
+
+
+            @media (max-width: $breakpoints-md) {
+                span{
+                    margin: 6px 0;
+                    padding: 0 4px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+.card-container a:hover .description {
+    opacity: .9;
+}
