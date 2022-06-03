@@ -1,0 +1,25 @@
+@import '../../../style/global.scss';
+
+.gallery-container {
+    margin-top: 30px;
+    padding: 0 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .item {
+        margin: 30px 0;
+        padding: 10px;
+        width: 47%;
+        border: 1px solid #eee;
+        background: #fdf7f7;
+        border-radius: 4px;
+    }
+
+    @media (max-width: $breakpoints-md) {
+        .item {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
