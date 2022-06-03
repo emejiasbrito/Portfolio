@@ -1,0 +1,9 @@
+@import '../../../style/global.scss';
+
+.logo-container {
+    span {
+        color: $primary-color;
+        font-weight: bolder;
+        font-size:25px;
+    }
+}
