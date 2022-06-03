@@ -1,0 +1,29 @@
+.navbar-container {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-container a {
+  margin-right: 5px;
+}
+
+.navbar-container a span {
+  font-size: 18px;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.navbar-container a:last-child {
+  margin-right: 0;
+}
+
+.navbar-container a img {
+  vertical-align: bottom;
+}
+
+.navbar-container .ico-linkedin {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 5px 6.5px;
+}
+/*# sourceMappingURL=Navbar.css.map */
