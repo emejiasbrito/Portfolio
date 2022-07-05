@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from './containers/Gallery/Gallery';
 import Header from './containers/Header/Header';
 
@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <Header />
       <Gallery />
-
     </div>
   );
 }
